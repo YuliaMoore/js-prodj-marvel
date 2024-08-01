@@ -22,7 +22,37 @@
     </header>
     <section class="hero">
       <div class="container hero-container">
-        <h2>Web-based platform</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="hero-left">
+            <h2>Web-based platform</h2>
+        <h1>Marvelous Adventures</h1>
+        <p class="hero-text">
+          is a web-based platform that provides an immersive experience for
+          users to explore and discover a vast collection of Marvel characters
+          and comics. Start exploring the Marvelous Adventures now by visiting
+          our Characters and Comics sections and discover your new favorites
+          today.
+        </p>
+        <button type="button" class="button">All Characters</button>
+      </div>
+            <img src="./images/black-panter.jpg" alt="" class="hero-pic" />
+            <div class="hero-right">
+              <img src="./images/black-panter-full.jpg" alt="" />
+              <div class="hero-descr">
+                <p>Characters</p>
+                <p class="hero-descr-text">
+                  T’Challa is the king of the secretive and highly advanced
+                  African nation of Wakanda - as well as the powerful warrior
+                  known as the Black Panther.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="hero-left">
+            <h2>Web-based platform</h2>
         <h1>Marvelous Adventures</h1>
         <p>
           is a web-based platform that provides an immersive experience for
@@ -33,7 +63,53 @@
         </p>
         <button type="button" class="button">All Characters</button>
       </div>
+            <img src="./images/spider-man.jpg" alt="" class="hero-pic" />
+            <div>
+              <img src="./images/spider-man.jpg" alt="" />
+              <div class="hero-descr">
+                <p>Characters</p>
+                <p>
+                  With amazing spider-like abilities, teenage science whiz Peter Parker fights crime and dreams of becoming an Avenger as Spider-Man.
+                </p>
+              </div>
+            </div>
+          </div><div class="swiper-slide">
+            <div class="hero-left">
+            <h2>Web-based platform</h2>
+        <h1>Marvelous Adventures</h1>
+        <p>
+          is a web-based platform that provides an immersive experience for
+          users to explore and discover a vast collection of Marvel characters
+          and comics. Start exploring the Marvelous Adventures now by visiting
+          our Characters and Comics sections and discover your new favorites
+          today.
+        </p>
+        <button type="button" class="button">All Characters</button>
+      </div>
+            <img src="./images/hulk.jpg" alt="" class="hero-pic" />
+            <div>
+              <img src="./images/hulk-full.jpg" alt="" />
+              <div class="hero-descr">
+                <p>Characters</p>
+                <p>
+                 Exposed to heavy doses of gamma radiation, scientist Bruce Banner transforms into the mean, green rage machine called the Hulk.
+                </p>
+              </div>
+            </div>
+          </div>
+        <div class="swiper-pagination"></div>
+      </div>
     </section>
     <script type="module" src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>
